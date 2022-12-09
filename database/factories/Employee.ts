@@ -6,6 +6,6 @@ export const EmployeeFactory = Factory.define(Employee, async ({ faker }) => {
   return {
     name: faker.name.fullName(),
     area: faker.name.jobArea(),
-    image: faker.image.avatar(),
+    image: 'https://i.pravatar.cc/96',
   }
 }).build()
