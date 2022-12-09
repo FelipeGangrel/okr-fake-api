@@ -26,9 +26,17 @@ const unities: Partial<MeasurementUnity>[] = [
     name: 'Miligrama',
     symbol: 'mg',
   },
+  {
+    name: 'Litro',
+    symbol: 'l',
+  },
+  {
+    name: 'Mililitro',
+    symbol: 'ml',
+  },
 ]
 
-export default class extends BaseSeeder {
+export default class MeasurementUnitySeeder extends BaseSeeder {
   public async run() {
     await MeasurementUnity.truncate()
     await MeasurementUnity.createMany(unities)
