@@ -1,0 +1,21 @@
+# For mysql use root/root as user/password
+# Please, create a volume named mysql
+version: '3.3'
+
+services:
+  db:
+    image: mysql
+    container_name: okr-fake-db
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql:/var/lib/mysql:Z
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: okr
+      TZ: America/Sao_Paulo
+volumes:
+  mysql:
+    external: true
