@@ -5,6 +5,6 @@ import { EmployeeFactory } from 'Database/factories/Employee'
 export default class EmployeeSeeder extends BaseSeeder {
   public async run() {
     await Employee.truncate()
-    await EmployeeFactory.createMany(200)
+    await EmployeeFactory.createMany(2000)
   }
 }

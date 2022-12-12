@@ -23,6 +23,8 @@ export default class EmployeesController {
       })
     }
 
+    query.orderBy('name', 'asc')
+
     const employees = await query.paginate(page, pageSize)
     const r = employees.serialize()
 
