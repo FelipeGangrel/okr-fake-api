@@ -13,3 +13,4 @@ This is a fake API for the OKR project. It is used to test the front-end.
 6 - Run `node ace migration:run` to run the migrations\
 7 - Run `node ace db:seed` to seed the database\
 8 - Run `npm run dev` to start the server
+9 - Run `docker-compose down` to stop the containers
