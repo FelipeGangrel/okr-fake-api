@@ -5,6 +5,7 @@ export default class extends BaseSeeder {
   public async run() {
     await this.runSeeder(await import('../Employee'))
     await this.runSeeder(await import('../MeasurementUnity'))
+    await this.runSeeder(await import('../Okr'))
   }
 
   private async runSeeder(seeder: { default: typeof BaseSeeder }): Promise<void> {
