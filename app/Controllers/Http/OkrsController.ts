@@ -23,7 +23,7 @@ export default class OkrsController {
     const r = okrs.serialize()
 
     return {
-      okrSelectorResponse: r.data.map((okr: Okr) => {
+      objectives: r.data.map((okr: Okr) => {
         return {
           id: okr.id,
           name: okr.name,
