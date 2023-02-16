@@ -11,7 +11,7 @@ This is a fake API for the OKR project. It is used to test the front-end.
 4 - copy the `.env.example` file to `.env`\
 5 - Run `npm install`\
 6 - Run `node ace migration:run` to run the migrations\
-7 - Run `node ace db:seed -i`. You will be prompted to select the seeders to run. Tip: The first one is a shortcut to run all the others \
+7 - Run `node ace db:seed -i`. You will be prompted to select the seeders to run. Tip: The first one is a shortcut to run all the others
 
 ```shell
 ❯ Select files to run …  Press <SPACE> to select
